@@ -48,7 +48,7 @@ label {
 input {
   width: 100%;
   padding: 10px 12px;
-  margin-bottom: 18px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
   font-size: 15px;
@@ -61,8 +61,38 @@ input:focus {
   box-shadow: 0 0 4px rgba(0, 120, 215, 0.3);
 }
 
+small {
+  display: block;
+  margin-bottom: 10px;
+  color: red;
+  font-size: 13px;
+}
+
+/* ===== Password Toggle ===== */
+.password-wrapper {
+  position: relative;
+  display:block;
+  
+
+}
+
+.password-wrapper input {
+  flex: 1;
+}
+
+.password-wrapper button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  bottom: 55px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
 /* ===== Button ===== */
-button {
+button#btn {
   width: 100%;
   background: #0078d7;
   color: white;
@@ -73,9 +103,10 @@ button {
   font-weight: 600;
   cursor: pointer;
   transition: background 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
 }
 
-button:hover {
+button#btn:hover {
   background: #005fa3;
   transform: scale(1.03);
 }
