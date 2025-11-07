@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Form Validator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="#" method="post">
+      <h2>Interactive Form Validator</h2>
+
+      <label for="name">Username</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Only letters, numbers, and underscores allowed"
+        required
+      />
+
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        placeholder="password Minimum 8 characters"
+        required
+      />
+      <button id="icon">Toggle</button>
+
+      <label for="confirmPassword">Confirm Password</label><br />
+      <input
+        type="password"
+        id="confirmPassword"
+        name="confirmPassword"
+        required
+        placeholder="Re-enter password"
+      />
+
+      <label for="phone">Phone Number</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Must be a valid format (e.g., 11 digits )"
+      />
+
+      <label for="age">Age (18-100)</label>
+      <input
+        id="age"
+        name="age"
+        type="number"
+        required
+        placeholder="Enter your age"
+      />
+
+      <button id="btn" type="submit">Submit</button>
+    </form>
+  </body>
+  <script src="Interactive Form Validator.js"></script>
+</html>
